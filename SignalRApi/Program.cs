@@ -19,5 +19,5 @@ var app = builder.Build();
 app.UseRouting();
 app.UseCors("AllowLocalhost");
 app.UseHttpsRedirection();
-app.MapHub<MessageHub>("message-hub");
+app.MapHub<MessageHub>("/message-hub");
 app.Run();
